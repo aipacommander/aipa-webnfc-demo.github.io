@@ -1,6 +1,6 @@
-const log = ChromeSamples.log;
+const log = console.log;
 if (!("NDEFReader" in window)) {
-  ChromeSamples.setStatus("Web NFC is not available. Use Chrome on Android.");
+  log("Web NFC is not available. Use Chrome on Android.");
 }
 
 const scanButton = document.querySelector("#scan-button");
