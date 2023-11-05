@@ -1,4 +1,4 @@
-const scanButton = document.querySelector("#scan");
+const scanButton = document.querySelector("#scan-button");
 scanButton.addEventListener("click", async () => {
   log("User clicked scan button");
 
