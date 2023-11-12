@@ -1,4 +1,4 @@
-export const setupWebNFC = (element: HTMLButtonElement) => {
+export const setupWebNFC = (element: HTMLButtonElement, callback: Function) => {
   if (!("NDEFReader" in window)) {
     console.log("Web NFC is not available. Use Chrome on Android.");
   }
@@ -20,6 +20,7 @@ export const setupWebNFC = (element: HTMLButtonElement) => {
         alert(`> Serial Number: ${nfcEvent.serialNumber}`);
         alert(`> Records: (${nfcEvent.message.records.length})`);
         console.log(nfcEvent);
+        callback(nfcEvent);
       });
     } catch (error) {
       console.log("Argh! " + error);
