@@ -1,5 +1,5 @@
 const doPost = async (text: string) => {
-    const url = 'https://script.google.com/macros/s/AKfycbwjYRvhAQ0tt1enPe_BkS1UN5SUHknJtCeRcyUacOAstS5fVkaJi6xbMSqc6eCg_zt-/exec';
+    const url = 'https://script.google.com/macros/s/AKfycbyE-YhyYz0fqa9_FXPV8RM7ZM_jzbF_zl-cfQdTKUZkV6fbOhByxEwEqnuqYnJEcy8w/exec';
     const token = 'BBtGOmbmwikr6vr0XzAip0G5';
     const response = await fetch(url, {
         method: "POST",
